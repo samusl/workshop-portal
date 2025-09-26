@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Colaboradores</h2>
+
+  <ul>
+    <li *ngFor="let c of colaboradores">
+      {{ c.id }} - {{ c.nome }}
+    </li>
+  </ul>
+
+  <div class="form-card">
+    <h3>Adicionar Colaborador</h3>
+    <form (ngSubmit)="adicionarColaborador()" #colabForm="ngForm">
+      <label for="nome">Nome</label>
+      <input
+        id="nome"
+        type="text"
+        [(ngModel)]="novoColaborador.nome"
+        name="nome"
+        required
+        placeholder="Digite o nome"
+      />
+
+      <p class="erro" *ngIf="mensagemErro">{{ mensagemErro }}</p>
+
+      <button type="submit" [disabled]="!colabForm.form.valid">
+        Adicionar
+      </button>
+    </form>
+  </div>
+</div>

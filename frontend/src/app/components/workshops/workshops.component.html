@@ -1,0 +1,46 @@
+<div class="container">
+  <h2>Workshops</h2>
+
+  <ul>
+    <li *ngFor="let w of workshops">
+      <a [routerLink]="['/workshops', w.id]">{{ w.nome }}</a>
+      - {{ w.dataRealizacao | date:'shortDate' }}
+    </li>
+  </ul>
+
+  <div class="form-card">
+    <h3>Adicionar Workshop</h3>
+    <form (ngSubmit)="adicionarWorkshop()" #workForm="ngForm">
+      <label for="nome">Nome do Workshop</label>
+      <input
+        id="nome"
+        type="text"
+        [(ngModel)]="novoWorkshop.nome"
+        name="nome"
+        required
+        placeholder="Digite o nome"
+      />
+
+      <label for="descricao">Descrição</label>
+      <input
+        id="descricao"
+        type="text"
+        [(ngModel)]="novoWorkshop.descricao"
+        name="descricao"
+        placeholder="Digite a descrição"
+      />
+
+      <label for="data">Data de realização</label>
+      <input
+        id="data"
+        type="date"
+        [(ngModel)]="novoWorkshop.dataRealizacao"
+        name="dataRealizacao"
+      />
+
+      <button type="submit" [disabled]="!workForm.form.valid">
+        Adicionar
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container" *ngIf="workshop">
+  <h2>{{ workshop.nome }}</h2>
+  <p><strong>Descrição:</strong> {{ workshop.descricao }}</p>
+  <p><strong>Data:</strong> {{ workshop.dataRealizacao | date:'shortDate' }}</p>
+
+  <h3>Participantes</h3>
+  <ul>
+    <li *ngFor="let p of participantes">
+      {{ p.nome }}
+      <button (click)="removerParticipante(p.id)">Remover</button>
+    </li>
+  </ul>
+
+  <div class="form-card">
+    <h3>Adicionar Participante</h3>
+    <select [(ngModel)]="colaboradorSelecionado" name="colaborador">
+      <option [ngValue]="null" disabled>Selecione um colaborador</option>
+      <option *ngFor="let c of colaboradoresDisponiveis" [value]="c.id">{{ c.nome }}</option>
+    </select>
+    <button (click)="adicionarParticipante()" [disabled]="!colaboradorSelecionado">Adicionar</button>
+  </div>
+</div>
