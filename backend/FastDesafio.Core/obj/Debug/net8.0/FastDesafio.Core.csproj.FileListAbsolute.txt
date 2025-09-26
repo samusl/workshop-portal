@@ -1,0 +1,11 @@
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\FastDesafio.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\FastDesafio.Core.AssemblyInfoInputs.cache
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\FastDesafio.Core.AssemblyInfo.cs
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\FastDesafio.Core.csproj.CoreCompileInputs.cache
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\bin\Debug\net8.0\FastDesafio.Core.deps.json
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\bin\Debug\net8.0\FastDesafio.Core.dll
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\bin\Debug\net8.0\FastDesafio.Core.pdb
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\FastDesafio.Core.dll
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\refint\FastDesafio.Core.dll
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\FastDesafio.Core.pdb
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\ref\FastDesafio.Core.dll
