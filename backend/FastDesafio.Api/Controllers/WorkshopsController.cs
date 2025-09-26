@@ -90,31 +90,36 @@ namespace FastDesafio.Api.Controllers
         }
 
         // POST api/workshops/{id}/participantes
-        [HttpPost("{id}/participantes")]
-        public IActionResult AddParticipante(int id, [FromBody] int colaboradorId)
+        public class AddParticipanteRequest
+{
+        public int ColaboradorId { get; set; }
+    }
+
+    [HttpPost("{id}/participantes")]
+    public IActionResult AddParticipante(int id, [FromBody] AddParticipanteRequest request)
+    {
+        var workshop = _context.Workshops.Find(id);
+        var colaborador = _context.Colaboradores.Find(request.ColaboradorId);
+
+        if (workshop == null || colaborador == null)
+            return NotFound("Workshop ou colaborador não encontrado");
+
+        if (_context.Presencas.Any(p => p.WorkshopId == id && p.ColaboradorId == request.ColaboradorId))
+            return BadRequest("Colaborador já está registrado nesse workshop");
+
+        var presenca = new Presenca
         {
-            var workshop = _context.Workshops.Find(id);
-            var colaborador = _context.Colaboradores.Find(colaboradorId);
+            WorkshopId = id,
+            ColaboradorId = request.ColaboradorId,
+            Registro = DateTime.UtcNow
+        };
 
-            if (workshop == null || colaborador == null)
-                return NotFound("Workshop ou colaborador não encontrado");
+        _context.Presencas.Add(presenca);
+        _context.SaveChanges();
 
-            // Verifica se já existe
-            if (_context.Presencas.Any(p => p.WorkshopId == id && p.ColaboradorId == colaboradorId))
-                return BadRequest("Colaborador já está registrado nesse workshop");
+        return Ok(presenca);
+    }
 
-            var presenca = new Presenca
-            {
-                WorkshopId = id,
-                ColaboradorId = colaboradorId,
-                Registro = DateTime.UtcNow
-            };
-
-            _context.Presencas.Add(presenca);
-            _context.SaveChanges();
-
-            return Ok(presenca);
-        }
         // GET api/workshops/{id}/participantes
         [HttpGet("{id}/participantes")]
         public IActionResult GetParticipantes(int id)

@@ -13,3 +13,4 @@ C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Infrastructure\obj\Debug\
 C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Infrastructure\obj\Debug\net8.0\refint\FastDesafio.Infrastructure.dll
 C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Infrastructure\obj\Debug\net8.0\FastDesafio.Infrastructure.pdb
 C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Infrastructure\obj\Debug\net8.0\ref\FastDesafio.Infrastructure.dll
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Infrastructure\obj\Debug\net8.0\FastDesafio.Infrastructure.sourcelink.json

@@ -9,3 +9,4 @@ C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\Fas
 C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\refint\FastDesafio.Core.dll
 C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\FastDesafio.Core.pdb
 C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\ref\FastDesafio.Core.dll
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Core\obj\Debug\net8.0\FastDesafio.Core.sourcelink.json

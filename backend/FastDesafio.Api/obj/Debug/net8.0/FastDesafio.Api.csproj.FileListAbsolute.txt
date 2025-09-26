@@ -52,3 +52,4 @@ C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Api\bin\Debug\net8.0\Micr
 C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Api\bin\Debug\net8.0\MySqlConnector.dll
 C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Api\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Api\bin\Debug\net8.0\package-lock.json
+C:\Users\samue_2jpspe\fast-desafio\backend\FastDesafio.Api\obj\Debug\net8.0\FastDesafio.Api.sourcelink.json
