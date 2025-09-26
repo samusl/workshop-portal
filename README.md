@@ -58,10 +58,23 @@ npm start
 
 ⚠️ O proxy.conf.json já está configurado para redirecionar chamadas para http://localhost:5167.
 
-### 📊 Endpoints de Relatórios (Gráficos) (funciona após criar os workshops e colaboradores na própria interface)
+## Screenshots das interfaces
+
+### 🔹 pagina adicionar workshop
+<img width="1902" height="937" alt="image" src="https://github.com/user-attachments/assets/9ac8d350-b93b-461b-996d-ea795189aad7" />
+
+### 🔹 Página adicionar colaborador
+<img width="1879" height="910" alt="image" src="https://github.com/user-attachments/assets/7e777313-1505-43db-a473-e8625e9334b8" />
+
+### 🔹 Página do workshop para adicionar e remover os colaboradores do workshop selecionado
+<img width="1910" height="927" alt="image" src="https://github.com/user-attachments/assets/16903d95-6638-4d00-8822-6dd47f53960e" />
+
+## 📊 Endpoints de Relatórios (Gráficos) (funciona após criar os workshops e colaboradores na própria interface)
 
 A API já retorna os dados prontos para exibição dos gráficos.
 
-🔹 Participação por Colaborador (Barras)
-🔹 Colaboradores por Workshop (Gráfico de Pizza)
+### 🔹 Participação por Colaborador (Barras)
+<img width="1883" height="745" alt="image" src="https://github.com/user-attachments/assets/fdce9795-95f5-4f41-87c2-b5f851568f93" />
 
+### 🔹 Colaboradores por Workshop (Gráfico de Pizza)
+<img width="1901" height="878" alt="image" src="https://github.com/user-attachments/assets/2d4e5701-03e0-4697-93f5-07a8b3e840e1" />
