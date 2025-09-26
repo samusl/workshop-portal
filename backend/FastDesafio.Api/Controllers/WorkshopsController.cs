@@ -90,23 +90,27 @@ namespace FastDesafio.Api.Controllers
         }
 
         // POST api/workshops/{id}/participantes
+        public class AddParticipanteRequest
+        {
+            public int ColaboradorId { get; set; }
+        }
+
         [HttpPost("{id}/participantes")]
-        public IActionResult AddParticipante(int id, [FromBody] int colaboradorId)
+        public IActionResult AddParticipante(int id, [FromBody] AddParticipanteRequest request)
         {
             var workshop = _context.Workshops.Find(id);
-            var colaborador = _context.Colaboradores.Find(colaboradorId);
+            var colaborador = _context.Colaboradores.Find(request.ColaboradorId);
 
             if (workshop == null || colaborador == null)
                 return NotFound("Workshop ou colaborador não encontrado");
 
-            // Verifica se já existe
-            if (_context.Presencas.Any(p => p.WorkshopId == id && p.ColaboradorId == colaboradorId))
+            if (_context.Presencas.Any(p => p.WorkshopId == id && p.ColaboradorId == request.ColaboradorId))
                 return BadRequest("Colaborador já está registrado nesse workshop");
 
             var presenca = new Presenca
             {
                 WorkshopId = id,
-                ColaboradorId = colaboradorId,
+                ColaboradorId = request.ColaboradorId,
                 Registro = DateTime.UtcNow
             };
 
@@ -115,6 +119,7 @@ namespace FastDesafio.Api.Controllers
 
             return Ok(presenca);
         }
+
         // GET api/workshops/{id}/participantes
         [HttpGet("{id}/participantes")]
         public IActionResult GetParticipantes(int id)

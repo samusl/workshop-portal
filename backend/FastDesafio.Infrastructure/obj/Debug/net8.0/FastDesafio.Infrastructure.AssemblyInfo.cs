@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FastDesafio.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bde8c21c5ac8b35885c8b4a7fe1c4f45a7f51e85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9715cee2d06ebd09d767438e9b4d42765610a7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("FastDesafio.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FastDesafio.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
