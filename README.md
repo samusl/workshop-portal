@@ -1,6 +1,6 @@
 # 📘 Workshop Portal
 
--aplicação Fullstack-
+###  aplicação Fullstack
 
 Portal de gerenciamento de **Workshops e Participações de Colaboradores**, desenvolvido em **.NET 7 (API)** e **Angular (Frontend)**.  
 
